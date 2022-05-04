@@ -1,0 +1,136 @@
+/* Account */
+
+.account_item {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 95%;
+  position: relative;
+}
+
+.account_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.account_item i::after {
+  content: "";
+  height: 32px;
+  position: absolute;
+  border-right: 1px solid;
+  top: 5px;
+  left: 40px;
+}
+
+.account_item i {
+  padding-right: 20px;
+}
+
+/* Birth-Gender */
+
+.birth_gender {
+  display: flex;
+  flex-direction: row;
+  gap: 68px;
+}
+
+.birth_items {
+  display: flex;
+  gap: 16px;
+}
+
+.birth_item {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 58px;
+  display: inline-block;
+}
+
+.birth_item input {
+  width: 40px;
+}
+
+/* Payment Details */
+
+.payment_details input[type="radio"] + label {
+  width: 47%;
+}
+
+.payment_details i {
+  padding-right: 5px;
+}
+
+.payment_details div {
+  margin-bottom: 15px;
+}
+
+.card_number {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 95%;
+  position: relative;
+}
+
+.card_number i {
+  padding-right: 20px;
+}
+
+.card_cvc {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.card_cvc i {
+  padding-right: 20px;
+}
+
+.card_number i::after {
+  content: "";
+  height: 32px;
+  position: absolute;
+  border-right: 1px solid;
+  top: 5px;
+  left: 40px;
+}
+
+.card_cvc i::after {
+  content: "";
+  height: 32px;
+  position: absolute;
+  border-right: 1px solid;
+  top: 5px;
+  left: 40px;
+}
+
+.card_date {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+select {
+  display: inline-block;
+  padding: 12px;
+  width: 115px;
+  cursor: pointer;
+}
+
+option:checked {
+  background-color: #f0a500;
+  color: #fff;
+  border-color: #bd8200;
+}
+
+select:hover {
+  background-color: #f0a500;
+  color: #fff;
+  border-color: #bd8200;
+}
+
+/* Terms and Conditions */
+
+.terms_conditions {
+  width: 92%;
+  padding-bottom: 20px;
+}

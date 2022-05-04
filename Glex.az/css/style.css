@@ -1,0 +1,152 @@
+/* nav section */
+body {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav::after {
+    content: "";
+    border-bottom: 1px solid;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.info-items {
+    padding: 0px 20px;
+    color: rgb(183, 121, 8);
+}
+
+.info-items:not(:last-child){
+    padding-right: 20px;
+}
+
+.info-items:first-child::after {
+    content: "";
+    border-right: 1px solid gray;
+    height: 50px;
+    margin: 0px 18px;
+    position: absolute;
+    top: 0;
+}
+
+.btn { 
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: border .4s;
+}
+
+.btn:hover {
+    opacity: .9;
+    border: 1px solid black;
+}
+
+.btn-primary {
+
+}
+
+.btn-secondary {
+
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+/* menu section */
+
+menu {
+    padding: 20px 0px;
+    width: 45%;
+}
+
+menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+menu li a {
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+menu li a:hover {
+    text-decoration: underline;
+}
+
+#slider {
+    background-color:#fdf3f0; 
+}
+
+.main-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-col:first-child {
+    width: 38%;
+}
+
+.slider-content {
+    width: 78%;
+}
+
+.slider-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.slider-content p {
+    font-size: 1.4rem;
+}
+
+/* order */
+
+#order {
+    padding: 60px 0px;
+}
+
+.order-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.order-items img {
+    width: 35%;
+    height: 35%;
+}
+
+.order-content h2 {
+    padding: 20px 0px;
+}
+
+.order-content p {
+    color: gray;
+}
+
+#order h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}

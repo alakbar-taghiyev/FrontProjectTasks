@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Form register</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="account">
+                <h2>Account</h2>
+                <div class="account_items">
+                    <div class="account_item">
+                        <label for="name"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="account_item">
+                        <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+                        <input type="email" id="mail" placeholder="Email Adress" required>
+                    </div>
+                    <div class="account_item">
+                        <label for="parol"><i class="fa-solid fa-key"></i></label>
+                        <input type="password" id="parol" placeholder="Password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="birth_gender">
+                <div class="birth">
+                    <h2>Date of Birth</h2>
+                    <div class="birth_items">
+                        <div class="birth_item">
+                            <label for="day"></label>
+                            <input type="text" id="day" placeholder="DD">
+                        </div>
+                        <div class="birth_item">
+                            <label for="month"></label>
+                            <input type="text" id="month" placeholder="MM">
+                        </div>
+                        <div class="birth_item">
+                            <label for="year"></label>
+                            <input type="text" id="year" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+                <div class="gender">
+                    <h2>Gender</h2>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="payment_details">
+                <h2>Payment Details</h2>
+                <div class="card">
+                    <input type="radio" id="visa" name="payment">
+                    <label for="visa"><i class="fa-brands fa-cc-visa"></i>Credit Card</label>
+                    <input type="radio" id="paypal" name="payment">
+                    <label for="paypal"><i class="fa-brands fa-cc-paypal"></i>Paypal</label>
+                </div>
+                <div class="card_number">
+                    <label for="number" id=""><i class="fa-solid fa-credit-card"></i></label>
+                    <input type="text" id="number" placeholder="Card Number">
+                </div>
+                <div class="card_details">
+                    <div class="card_cvc">
+                        <label for="cvc"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="cvc" placeholder="Card CVC">
+                    </div>
+                    <div class="card_date">
+                        <select>
+                            <option value="1">01 Jan</option>
+                            <option value="2">02 Jan</option>
+                        </select>
+                        <select>
+                            <option value="1">2015</option>
+                            <option value="2">2016</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="terms_conditions">
+                <h2>Terms and Conditions</h2>
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm
+                    I have read the privacy policy.</label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
