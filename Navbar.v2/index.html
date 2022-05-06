@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 40px;
+            background-color: rgb(83, 81, 81);
+
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .navigation li {
+            padding: 35px 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .navigation li:not(:last-child):hover {
+            background-color: rgb(112, 100, 100);
+        }
+
+        .navigation li:hover a {
+            color: #fd7800;
+        }
+
+        span {
+            color: #fd7800;
+        }
+
+        .logo {
+            font-size: 32px;
+        }
+
+        .btn {
+            background: linear-gradient(156deg, #fc7638 45%, #fd5d42 71%);
+            padding: 20px 35px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .navigation li:last-child {
+            display: none;
+        }
+
+        @media (max-width:1180px) {
+
+            nav:not(:last-child) {
+                flex-direction: column;
+                position: relative;
+            }
+
+            .navigation {
+                flex-direction: column;
+            }
+
+            .navigation li {
+                display: none;
+            }
+
+            .navigation li:last-child {
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: 21%;
+                background-color: rgb(112, 100, 100);
+                padding: 17px 20px;
+                opacity: .7;
+            }
+
+            .navigation li:last-child:hover {
+                opacity: 1;
+            }
+
+            nav {
+                padding: 15px 25px;
+            }
+
+            .responsive .navigation li:not(:last-child) {
+                display: block;
+            }
+
+            .responsive .navbar {
+                display: block;
+            }
+        }
+    </style>
+
+    <script>
+        function dispalyMenu() {
+            var link = document.getElementById("navbar");
+            link.classList.toggle("responsive");
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#" class="logo"><span>U</span>DESIGN</a>
+        <ul class="navigation">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Demos</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#" onclick="dispalyMenu()"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <a href="#" class="btn">Buy UDesign Now!</a>
+    </nav>
+</body>
+
+</html>
