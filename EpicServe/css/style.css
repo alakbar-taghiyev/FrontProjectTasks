@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* header section */
+
+header {
+    background-color: #040929;
+    padding: 10px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.for-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.for-register {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone {
+    margin-left: 20px;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.for-contact a {
+    font-size: 14px;
+}
+
+.for-register a {
+    font-size: 14px;
+}
+
+.login a {
+    position: relative;
+}
+
+.login a::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 56px;
+    height: 16px;
+    width: 1px;
+    background-color: white;
+}
+
+/* nav section */
+
+nav {
+    background-color: #0C1246;
+    padding: 22px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo span {
+    font-size: 26px;
+}
+
+.nav_logo .epic {
+    color: #ced4da;
+}
+
+.nav_logo  .serve {
+    color: white;
+    font-weight: 600;
+}
+
+.nav_links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav_links li {
+    display: flex;
+}
+
+.nav_links a {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.nav_links {
+    display: flex;
+}
+
+/* banner section */
+
+.banner {
+    background-image: url(/img/banner_img.png);
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+}
+
+.banner_content h1 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.banner_content p {
+    font-size: 24px;
+}
+
+.banner_content ul {
+    margin-left: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn_started {
+    background-color: #0075be;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn_learn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.banner_pic {
+    height: 70vh;
+    width: 100%;
+}
+
+.banner_pic img {
+    max-width: 100%;
+    height: 100%;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+/* faq section */
+
+.faq {
+    padding: 70px 0;
+    background-color: #f2f2f2;
+}
+
+.section_title {
+    text-align: center;
+}
+
+.section_title h1 {
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 11%);
+}
+
+.search {
+    padding: 10px 30px;
+    background-color: #0075be;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+}
+
+.domain_form {
+    position: relative;
+}
+
+/* pricing section */
+
+.pricing {
+    padding: 50px 0;
+}
+
+.pricing_items {
+    background-color: #0175be;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.pricing_items h4 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pricing_items h3 {
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.import {
+    background: linear-gradient(176deg, #0073be, #002d4a);
+}
+
+.pricing_links {
+    list-style-type: none;
+}
+
+.pricing_links li {
+    padding-bottom: 16px;
+    color: #dee2e6;
+}
+
+.pricing_items button {
+    background-color: #0075be;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.import button {
+    background-color: white;
+    color: #0075be;
+    transition: all .5s ease;
+}
+
+.import button:hover {
+    background-color: #0075be;
+    color: #fff;
+}
+
+/* services section */
+
+.services {
+    background: url(/img/banner_img.png);
+    background-attachment: fixed;
+    color: white;
+    padding: 50px 0;
+}
+
+.services_items {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.services_items h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* hosting section */
+
+.hosting {
+    background: url(/img/banner_img.png);
+    background-attachment: fixed;
+    padding: 100px 0;
+    margin-top: 20px;
+}
+
+.hosting_items h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+/* contact section */
+
+.contact {
+    padding: 100px 0;
+}
+
+.contact_about {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contact_items p {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.contact_items i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: #E3E3E3;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+
